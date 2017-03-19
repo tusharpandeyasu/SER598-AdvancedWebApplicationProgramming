@@ -1,0 +1,35 @@
+
+doctype html
+html
+  head
+    title Web Form 2
+  body
+  if(failure)
+      p=failureMsg
+      br
+  form(action='post_coder2', method='POST')
+      br
+      | Programming Languages Known:
+      br
+      input(type='checkbox', name='languages', value='C', checked=(checkedLangsC === '1' ? 'checked' : undefined))
+      |  C
+      br
+      input(type='checkbox', name='languages', value='Ruby', checked=(checkedLangsRuby === '1' ? 'checked' : undefined))
+      |  Ruby
+      br
+      input(type='checkbox', name='languages', value='Ada', checked=(checkedLangsAda === '1' ? 'checked' : undefined))
+      |  Ada
+      br
+      input(type='checkbox', name='languages', value='Java', checked=(checkedLangsJava === '1' ? 'checked' : undefined))
+      |  Java
+      br
+      input(type='checkbox', name='languages', value='Scala', checked=(checkedLangsScala === '1' ? 'checked' : undefined))
+      |  Scala
+      br
+      input(type='checkbox', name='languages', value='Python', checked=(checkedLangsPython === '1' ? 'checked' : undefined))
+      |  Python
+      br
+      br
+      input(type='submit', name= 'action', value='Previous')
+      |&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;
+      input(type='submit', name= 'action', value='Next')

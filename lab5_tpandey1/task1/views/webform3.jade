@@ -1,0 +1,39 @@
+
+doctype html
+html
+  head
+    title Web Form 3
+    body
+    if(failure)
+      p=failureMsg
+    br
+    form(action='post_coder3', method='POST')
+      br
+      | Available on Day(s) of the week:
+      br
+      input(type='checkbox', name='days', value='Monday', checked=(checkedDaysMon === '1' ? 'checked' : undefined))
+      |  Monday
+      br
+      input(type='checkbox', name='days', value='Tuesday', checked=(checkedDaysTue === '1' ? 'checked' : undefined))
+      |  Tuesday
+      br
+      input(type='checkbox', name='days', value='Wednesday', checked=(checkedDaysWed === '1' ? 'checked' : undefined))
+      |  Wednesday
+      br
+      input(type='checkbox', name='days', value='Thursday', checked=(checkedDaysThu === '1' ? 'checked' : undefined))
+      |  Thursday
+      br
+      input(type='checkbox', name='days', value='Friday', checked=(checkedDaysFri === '1' ? 'checked' : undefined))
+      |  Friday
+      br
+      input(type='checkbox', name='days', value='Saturday', checked=(checkedDaysSat === '1' ? 'checked' : undefined))
+      |  Saturday
+      br
+      input(type='checkbox', name='days', value='Sunday', checked=(checkedDaysSun === '1' ? 'checked' : undefined))
+      |  Sunday
+      
+      br
+      br
+      input(type='submit', name= 'action', value='Previous')
+      |&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;
+      input(type='submit', name= 'action', value='Next')

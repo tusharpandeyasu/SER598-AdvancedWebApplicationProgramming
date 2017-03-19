@@ -1,0 +1,8 @@
+doctype html
+html
+  head
+    title Results
+  body(bgcolor=mybgcolor)
+    h1 Results:
+    each val, index in myCodersArray
+      p='Result#'+ (index+1)+' - '+ 'Firstname: '+ val.firstname+', Lastname: '+val.lastname+', Languages: '+val.languages+', Days: '+val.days+', Contact: '+val.contact

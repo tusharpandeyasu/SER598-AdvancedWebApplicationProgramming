@@ -1,0 +1,18 @@
+
+doctype html
+html
+  head
+    title Web Form 4
+  body
+    if(failure)
+    p=failureMsg
+  br
+form(action='post_coder4', method='POST')
+     
+      | Contact Number:
+      input(type='text', name='contact', value=contact)
+      br
+      br
+      input(type='submit', name= 'action', value='Previous')
+      |&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;
+      input(type='submit', name= 'action', value='Next')

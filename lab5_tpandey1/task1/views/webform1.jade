@@ -1,0 +1,19 @@
+
+doctype html
+html
+  head
+    title Web Form 1
+  body
+    if(failure)
+      p=failureMsg
+    br
+    form(action='post_coder1', method='POST')
+      | First name: 
+      input(type='text', name='firstname', value=firstname)
+      br
+      br
+      | Last name: 
+      input(type='text', name='lastname', value=lastname)
+      br      
+      br
+      input(type='submit', value='Next')

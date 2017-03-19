@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title Review
+  body
+    br
+    form(action='post_coder5', method='POST')
+      | First name:  
+      = firstname
+      br
+      br
+      | Last name:  
+      = lastname
+      br
+      br
+      | Programming Languages Known:  
+      = languages
+      br
+      br
+      | Available on Day(s) of the week:  
+      = days
+      br
+      br
+      | Contact Number:  
+      = contact
+      br
+      br
+      input(type='submit', name= 'action', value='Previous')
+      |&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;
+      input(type='submit', name= 'action', value='Submit')
+      |&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;
+      input(type='submit', name= 'action', value='Cancel')
